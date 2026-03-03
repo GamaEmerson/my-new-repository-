@@ -1,0 +1,37 @@
+public class animal {
+// atributos da classe
+String nomeAnimal;
+int numerodePatas;
+boolean temRabo;
+String cor;
+int idade;
+double peso;
+String tipoAlimentacao;
+char genero;
+
+public void printStatus() {
+    System.out.println("Nome: " + nomeAnimal);
+    System.out.println("Número de patas: " + numerodePatas);
+    System.out.println("Tem rabo? " + temRabo);
+    System.out.println("Cor: " + cor);
+    System.out.println("Idad: " + idade);
+    System.out.println("Peso: " + peso);
+    System.out.println("Tipo de alimentação: " + tipoAlimentacao);
+    System.out.println("Gênero: " + genero);
+    System.out.println("-------------------------");
+    }
+public static void main(String[] args) {
+    // criando o primeiro animal
+    Animal cachorro = new Animal();
+    cachorro.nomeAnimal = "wolly";
+    cachorro.numerodePatas = 4;
+    cachorro.temRabo = true;
+    cachorro.cor = "Preto e marrom";
+    cachorro.idade = 13;
+    cachorro.peso = 10;
+    cachorro.tipoAlimentacao = "Ração";
+    cachorro.genero = "Macho";
+
+cachorro.printStatus();
+    }
+}
