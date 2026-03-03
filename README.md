@@ -1,1 +1,1 @@
-# my-new-repository-
+A POO é o pilar do desenvolvimento de software moderno em que se é possivel organizar codigos em objetos, minhas expectativas referente a esse curso se da por seus conceitos fundamentais e que futuramente podera ser utilizada Escalabilidade e Manutenção,Reutilização de Código e trabalho em equipe 
