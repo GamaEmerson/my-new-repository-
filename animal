@@ -9,42 +9,56 @@ public class Animal {
     String tipoAlimentacao;
     char genero;
     
-// Método para imprimir os atributos do animal
-public void printStatus() {
-    System.out.println("Nome: " + nomeAnimal);
-    System.out.println("Número de patas: " + numerodePatas);
-    System.out.println("Tem rabo? " + temRabo);
-    System.out.println("Cor: " + cor);
-    System.out.println("Idade: " + idade);
-    System.out.println("Peso: " + peso);
-    System.out.println("Tipo de alimentação: " + tipoAlimentacao);
-    System.out.println("Gênero: " + genero);
-    System.out.println("-------------------------");
-}
-//Método principal (main)
-public static void main(String[] args) {
-    // criando o primeiro animal
-    Animal cachorro = new Animal();
-    cachorro.nomeAnimal = "lola";
-    cachorro.numerodePatas = 4;
-    cachorro.temRabo = true;
-    cachorro.cor = "branca";
-    cachorro.idade = 6;
-    cachorro.peso = 10;
-    cachorro.tipoAlimentacao = "Ração";
-    cachorro.genero = 'F';
-    
-    Animal gato = new Animal();
-    gato.nomeAnimal = "Mingau";
-    gato.numerodePatas = 4;
-    gato.temRabo = true;
-    gato.cor = "Cinza";
-    gato.idade = 2;
-    gato.peso = 4.2;
-    gato.tipoAlimentacao = "Raçao e peixe";
-    gato.genero = 'F';
+    // Método para imprimir os atributos do animal
+    public void printStatus() {
+        System.out.println("Nome: " + nomeAnimal);
+        System.out.println("Número de patas: " + numerodePatas);
+        System.out.println("Tem rabo? " + temRabo);
+        System.out.println("Cor: " + cor);
+        System.out.println("Idade: " + idade);
+        System.out.println("Peso: " + peso);
+        System.out.println("Tipo de alimentação: " + tipoAlimentacao);
+        System.out.println("Gênero: " + genero);
+        
+    }
+
+    // Método para emitir som
+    public void emitirSom() {
+        if (nomeAnimal.equalsIgnoreCase("lola")) {
+            System.out.println(nomeAnimal + " faz: Au Au!");
+        System.out.println("-------------------------");
+        } else if (nomeAnimal.equalsIgnoreCase("Mingau")) {
+            System.out.println(nomeAnimal + " faz: Miau!");
+        }
+    }
+
+    // Método principal (main)
+    public static void main(String[] args) {
+        // criando o primeiro animal
+        Animal cachorro = new Animal();
+        cachorro.nomeAnimal = "lola";
+        cachorro.numerodePatas = 4;
+        cachorro.temRabo = true;
+        cachorro.cor = "branca";
+        cachorro.idade = 6;
+        cachorro.peso = 10;
+        cachorro.tipoAlimentacao = "Ração";
+        cachorro.genero = 'F';
+
+        Animal gato = new Animal();
+        gato.nomeAnimal = "Mingau";
+        gato.numerodePatas = 4;
+        gato.temRabo = true;
+        gato.cor = "Cinza";
+        gato.idade = 2;
+        gato.peso = 4.2;
+        gato.tipoAlimentacao = "Ração e peixe";
+        gato.genero = 'F';
 
         cachorro.printStatus();
+        cachorro.emitirSom();
+
         gato.printStatus();
+        gato.emitirSom();
     }
 }
